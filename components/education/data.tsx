@@ -30,7 +30,7 @@ export const Education: Array<EducationEntry> = [
 		description: (
 			<div className="space-y-4">
 				<p>
-					Master's program focused on econometric modeling, statistical analysis, and quantitative methods. 
+					Master&apos;s program focused on econometric modeling, statistical analysis, and quantitative methods. 
 					Developed strong foundation in data analysis and modeling techniques that directly translate to 
 					production ML systems and data platform engineering.
 				</p>
