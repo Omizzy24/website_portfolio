@@ -24,104 +24,48 @@ export const getProjectsByCompany = (work: ExperienceEntry) => Projects.filter(
 	project => project.org === work.orgKey
 );
 
-// todo: add others if they come up
 export const isIrregularEmployment = (position: ExperiencePosition) => position.type === 'Contract';
 
 type PositionType = "Full Time" | "Part Time" | "Contract" | "Internship" | "Other";
 
 export const WorkExperience: ExperienceEntry[] = [
 	{
-		company: "Walmart Global Tech",
-		orgKey: "wmt",
-		href: "https://tech.walmart.com",
-		image: "/logos/wgt.jpeg",
+		company: "The Cigna Group",
+		orgKey: "cigna",
+		href: "https://www.thecignagroup.com",
+		image: "/logos/cigna.png",
 		positions: [
 			{
-				title: "Software Engineer II",
+				title: "DevOps Engineer",
 				type: "Full Time",
-				description: "Built a Social Hub on Walmart.com with a reels feed to showcase creator content, using Next.js and GraphQL. Developed a real-time financial reporting service for the Thanksgiving/Black Friday period. Created internal tools, including a DevOps dashboard integrating SonarQube, Snyk, Git, and other tools, along with a GenAI content creation platform used by Walmart merchants. Collaborated across teams to integrate GenAI-powered UX enhancements into on-site social experiences.",
-				start: "2024-07-08",
+				description: "Architected serverless data platform processing 80K+ files across 320+ DynamoDB tables using S3-triggered Lambda functions with Protobuf parsing and Redshift Spectrum external tables. Optimized DynamoDB runtime configuration by troubleshooting hot partition issues and refactoring nested array structures, achieving 40% performance improvement. Reduced infrastructure costs 95% ($24K annually) while improving underwriter quote generation speed 60%, directly supporting millions in annual premium revenue. Built observability infrastructure achieving 99.9% data validation accuracy, securing FY2026 executive budget approval.",
+				start: "2025-07-01",
 				current: true,
-				location: "Sunnyvale, CA",
+				location: "Bloomfield, CT",
 			},
-			{
-				title: "Software Engineer Intern",
-				type: "Internship",
-				description: "Enhanced the Virtual Care Telehealth platform (MeMD) by developing full-stack features using Angular, TypeScript, and AWS services across patient, care coordinator, and provider portals. Contributed to user-facing features such as the scheduling flow and video/chat capabilities, improving the telehealth experience for tens of thousands of users. Also led the creation of a Datadog integration to generate automated error reports.",
-				start: "2023-05-31",
-				end: "2023-08-11",
-				location: "Bentonville, AR",
-			},
-		],
-	},
-	{
-		company: "University of Connecticut",
-		orgKey: "uconn",
-		href: "https://its.uconn.edu",
-		image: "/logos/uconn.jpeg",
-		positions: [
 			{
 				title: "Software Engineer",
-				type: "Part Time",
-				description: "Created academic facilities observability infrastructure using TypeScript, Redis, and Next.js. Implemented integrations with VMware vSphere, Zabbix, and Splunk for monitoring applications. Collaborated on a large scale with other university departments to deliver breaking changes effectively, as well as drafted documentation and onboarding materials for other IT staff and students.",
-				start: "2022-01-01",
-				end: "2024-05-30",
-				location: "Storrs, CT",
+				type: "Full Time",
+				description: "Re-engineered ETL architecture from Lambda to Glue achieving 30% efficiency improvement and zero timeout incidents through horizontal scaling, processing 100K+ daily records for 200+ engineering teams. Built RESTful APIs ingesting enterprise metadata with Neo4j graph database for LLM RAG optimization, improving retrieval speeds 50% and saving 15-20 FTE hours weekly. Secured $2M funding for AI infrastructure expansion by leading MetagenAI project, enabling AI department growth from 5 to 15+ headcount. Resolved critical production outage within 2 hours leading 100+ person incident response, preventing $500K+ in claims processing errors.",
+				start: "2024-02-01",
+				end: "2025-07-01",
+				location: "Bloomfield, CT",
 			},
 			{
-				title: "Advanced Device Support Technician",
-				type: "Part Time",
-				description: "Assisted students, faculty, and staff both in person and over the Jira ticketing system. Monitored and ensured accountability for operating system patching and loaner devices. Trained, mentored, and created onboarding documentation for newly-hired technicians.",
-				start: "2021-08-31",
-				end: "2022-01-01",
-				location: "Storrs, CT",
+				title: "Solutions Architect",
+				type: "Full Time",
+				description: "Designed real-time data synchronization system between DynamoDB and AppSync GraphQL endpoints, reducing query latency from hours to <1 minute for 1500+ daily users (220K+ annual queries). Led production release of AWS Glue jobs for provider data migration from on-premises to cloud, reducing data retrieval times 30%. Achieved 15% reduction in data-related production incidents, preventing $2.5M in subsidiary budget overruns through improved data quality.",
+				start: "2023-02-01",
+				end: "2024-02-01",
+				location: "Bloomfield, CT",
 			},
-		],
-	},
-	{
-		company: "ILEFA Labs",
-		orgKey: "ilefa",
-		href: "https://ilefa.club",
-		image: "/logos/ilefa.png",
-		positions: [
 			{
-				title: "Founder",
-				type: "Other",
-				description: "I am a founder and full-stack software engineer at ILEFA Labs. I work on websites, open-source libraries, and other projects at the organization.",
-				start: "2020-12-01",
-				end: "2024-05-30",
-				location: "Storrs, CT",
-			},
-		],
-	},
-	{
-		company: "Warp Studios",
-		orgKey: "warp",
-		href: "https://wrp.sh",
-		image: "/logos/warp.png",
-		positions: [
-			{
-				title: "Contributor",
-				type: "Other",
-				description: "I am one of the contributors of Warp Studios, a software development organization responsible for making small games and other assorted applications.",
-				start: "2020-01-01",
-				current: true,
-				location: "Remote"
-			},
-		],
-	},
-	{
-		company: "EyesUp, Inc.",
-		orgKey: "eyesup",
-		image: "/logos/rosc.png",
-		positions: [
-			{
-				title: "Full Stack Software Engineer",
-				type: "Contract",
-				description: "Oversaw development team operations and infrastructure planning, as well as used TypeScript and Firebase, to create a scalable cloud backend to ingest mobile application data. Assisted with the creation of a responsive mobile application using React Native. Communicated with Epic to implement secure integration with patient charting services.",
-				start: "2020-12-01",
-				end: "2021-08-01",
-				location: "New York, NY",
+				title: "Data Analyst Intern",
+				type: "Internship",
+				description: "Analyzed 2.5M+ longitudinal patient records using regression analysis and time series techniques to identify post-COVID outcome trends. Built predictive models using gradient boosting and EDA, then segmented high-risk cohorts using K-means clustering and KNN classification, informing targeted interventions that lowered hospitalization rates 10%. Won 1st place in TECDP Summer Innovation Project 2022, recognized by CEO David Cordani during company-wide town hall, securing full-time return offer.",
+				start: "2022-05-01",
+				end: "2022-08-01",
+				location: "Bloomfield, CT",
 			},
 		],
 	},

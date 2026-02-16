@@ -7,9 +7,9 @@ import { ExperiencePosition } from "~/components/work/data";
 type SocialConfigLike = Record<string, string>;
 
 export const SocialConfig: SocialConfigLike = {
-	github: "https://github.com/notm1ke",
-	linkedin: "https://www.linkedin.com/in/mike-medved/",
-	email: "mailto:me@m1ke.co",
+	github: "https://github.com/Omizzy24",
+	linkedin: "https://linkedin.com/in/omar-al-shammary",
+	email: "mailto:alshammaryomar@proton.me",
 };
 
 export const css = (...inputs: ClassValue[]) => twMerge(clsx(inputs));

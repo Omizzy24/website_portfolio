@@ -12,6 +12,7 @@ import { ProjectSection } from "~/components/project";
 import { ArrowRight, MapPinHouse } from "lucide-react";
 import { ScrollArea } from "~/components/ui/scroll-area";
 import { EducationSection } from "~/components/education";
+import { PhilosophySection } from "~/components/philosophy";
 import { GithubIcon } from "~/components/ui/icons/github";
 import { LinkedinIcon } from "~/components/ui/icons/linkedin";
 import { useSectionObserver } from "~/hooks/use-section-observer";
@@ -38,8 +39,8 @@ export default function Home() {
 					<div className="space-y-12">
 						<div className="flex items-center gap-8 mt-2 sm:mt-12">
 							<Image
-								src="https://www.m1ke.co/me.png"
-								alt="Mike Medved"
+								src="/me.png"
+								alt="Omar Al-Shammary"
 								width={180}
 								height={180}
 								className="rounded-lg border-3 mt-2 border-purple-500/60 hidden sm:inline"
@@ -47,20 +48,20 @@ export default function Home() {
 							/>
 							<div className="flex flex-col justify-center h-[120px] mt-8 sm:mt-0 sm:h-[180px]">
 								<span className="text-4xl sm:text-5xl text-purple-500 font-extrabold font-offbit-dots">
-									Mike Medved
+									Omar Al-Shammary
 								</span>
 								<div className="mt-3">
 									<span className="text-md sm:text-lg font-semibold text-gray-200">
-										SWE @ Walmart, CS Alumni @ UConn
+										Production AI/ML Infrastructure Engineer @ The Cigna Group
 									</span>
 									<br />
 									<span className="text-md sm:text-lg text-gray-400">
-										Full Stack Software Engineer
+										Serverless Data Platforms | Enterprise RAG Systems | High-Availability APIs
 									</span>
 									<div className="flex items-center gap-4 mt-4">
 										<div className="flex items-center gap-1 text-md text-purple-300">
 											<MapPinHouse className="h-5.5 w-5.5 mr-1" />
-											Bay Area
+											Tri-State Area
 										</div>
 										<Separator
 											orientation="vertical"
@@ -91,10 +92,29 @@ export default function Home() {
 							</div>
 						</div>
 						
+						{/* Credibility Indicators */}
+						<div className="grid grid-cols-1 sm:grid-cols-3 gap-4 -mt-4">
+							<div className="text-center sm:text-left">
+								<div className="text-2xl font-bold text-purple-400">$2M</div>
+								<div className="text-sm text-gray-400">AI Funding Secured</div>
+							</div>
+							<div className="text-center sm:text-left">
+								<div className="text-2xl font-bold text-purple-400">95% / 60%</div>
+								<div className="text-sm text-gray-400">Cost Reduction / Speed Improvement</div>
+							</div>
+							<div className="text-center sm:text-left">
+								<div className="text-2xl font-bold text-purple-400">1500+</div>
+								<div className="text-sm text-gray-400">Daily Users, 220K+ Annual Queries</div>
+							</div>
+						</div>
+						
 						{/* Work Experience */}
 						<WorkSection />
 						
-						{/* Personal Projects */}
+						{/* Systems Philosophy */}
+						<PhilosophySection />
+						
+						{/* Projects */}
 						<ProjectSection />
 
 						{/* Education */}
@@ -111,7 +131,7 @@ export default function Home() {
 								<h3 className="mb-4 text-lg font-bold text-purple-400">
 									On This Page
 								</h3>
-								{["work", "projects", "education", "honors"].map(
+								{["work", "philosophy", "projects", "education", "honors"].map(
 									(section) => (
 										<a
 											key={section}

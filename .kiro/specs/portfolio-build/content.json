@@ -1,0 +1,280 @@
+{
+  "meta": {
+    "name": "Omar Al-Shammary",
+    "title": "Production AI/ML Infrastructure Engineer",
+    "location": "Tri-State Area (CT/NYC/NJ)",
+    "email": "alshammaryomar@proton.me",
+    "phone": "(203) 805-9303",
+    "website": "https://omaralshammary.com",
+    "github": "https://github.com/Omizzy24",
+    "linkedin": "https://linkedin.com/in/omar-al-shammary"
+  },
+  
+  "hero": {
+    "positioning": "Production AI/ML Infrastructure Engineer specializing in serverless data platforms, enterprise RAG systems, and high-availability APIs at The Cigna Group",
+    "credibility": [
+      "Secured $2M in AI infrastructure funding",
+      "95% cost reduction, 60% speed improvement on production systems",
+      "Serving 1500+ daily users, 220K+ annual queries"
+    ]
+  },
+  
+  "experience": [
+    {
+      "id": "cigna-devops-2025",
+      "company": "The Cigna Group",
+      "role": "DevOps Engineer",
+      "team": "Data Platforms & ML Infrastructure",
+      "duration": "July 2025 - Present",
+      "location": "Bloomfield, CT",
+      "problem": "Small group insurance underwriters needed faster access to actuarial data for premium quotations, but legacy PostgreSQL infrastructure was expensive and slow, creating bottlenecks in quote generation that directly impacted revenue.",
+      "solution": "Architected serverless data platform processing 80K+ files across 320+ DynamoDB tables using S3-triggered Lambda functions with Protobuf parsing and Redshift Spectrum external tables. Optimized DynamoDB runtime configuration by troubleshooting hot partition issues and refactoring nested array structures, achieving 40% performance improvement.",
+      "stack": ["AWS Lambda", "S3", "DynamoDB", "Redshift Spectrum", "Terraform", "Python", "CloudWatch", "Athena"],
+      "scale": "80K+ files, 320+ tables, 10K+ columns with strict data typing through versioned JSON schemas",
+      "outcome": "Reduced infrastructure costs 95% ($24K annually) while improving underwriter quote generation speed 60%, directly supporting millions in annual premium revenue. Built observability infrastructure achieving 99.9% data validation accuracy, securing FY2026 executive budget approval."
+    },
+    {
+      "id": "cigna-swe-2024",
+      "company": "The Cigna Group",
+      "role": "Software Engineer",
+      "team": "Generative AI & Enterprise Data Platform",
+      "duration": "February 2024 - July 2025",
+      "location": "Bloomfield, CT",
+      "problem": "Engineering teams lacked efficient access to enterprise metadata scattered across Atlassian and GitHub, while Lambda-based ETL pipelines hit timeout limits processing 100K+ daily records for 200+ teams.",
+      "solution": "Re-engineered ETL architecture from Lambda to Glue achieving 30% efficiency improvement and zero timeout incidents through horizontal scaling. Built RESTful APIs ingesting enterprise metadata with Neo4j graph database for LLM RAG optimization, improving retrieval speeds 50%.",
+      "stack": ["AWS Glue", "Lambda", "Python", "Neo4j", "PostgreSQL", "Redis", "OpenAI API", "LangGraph", "React"],
+      "scale": "100K+ daily records, 200+ engineering teams, 15-20 FTE hours saved weekly",
+      "outcome": "Secured $2M funding for AI infrastructure expansion by leading MetagenAI project, enabling AI department growth from 5 to 15+ headcount. Resolved critical production outage within 2 hours leading 100+ person incident response, preventing $500K+ in claims processing errors."
+    },
+    {
+      "id": "cigna-architect-2023",
+      "company": "The Cigna Group",
+      "role": "Solutions Architect",
+      "team": "Cloud Infrastructure & Migration",
+      "duration": "February 2023 - February 2024",
+      "location": "Bloomfield, CT",
+      "problem": "Members needed self-service provider network searches, but on-premises data retrieval took hours, driving call center volume and reducing satisfaction scores.",
+      "solution": "Designed real-time data synchronization system between DynamoDB and AppSync GraphQL endpoints, reducing query latency from hours to <1 minute. Led production release of AWS Glue jobs for provider data migration from on-premises to cloud.",
+      "stack": ["AWS AppSync", "DynamoDB", "Lambda", "Databricks", "Glue", "S3", "GraphQL", "Splunk"],
+      "scale": "1500+ daily users, 220K+ annual queries, 600+ daily active users",
+      "outcome": "Reduced data retrieval times 30%, improving member self-service and reducing call center inquiries 20% (estimated $150K+ annual savings). Achieved 15% reduction in data-related production incidents, preventing $2.5M in subsidiary budget overruns."
+    },
+    {
+      "id": "cigna-intern-2022",
+      "company": "The Cigna Group",
+      "role": "Data Analyst Intern",
+      "team": "COVID-19 Population Health Analytics",
+      "duration": "May 2022 - August 2022",
+      "location": "Bloomfield, CT",
+      "problem": "Post-COVID patient outcomes were poorly understood across 2.5M+ member population, limiting ability to target high-risk cohorts for preventive interventions.",
+      "solution": "Analyzed 2.5M+ longitudinal patient records using regression analysis and time series techniques. Built predictive models using gradient boosting and EDA, then segmented high-risk cohorts using K-means clustering and KNN classification.",
+      "stack": ["Python", "scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+      "scale": "2.5M+ patient records analyzed across longitudinal dataset",
+      "outcome": "Informed targeted interventions lowering hospitalization rates 10%. Won 1st place in TECDP Summer Innovation Project 2022, recognized by CEO David Cordani during company-wide town hall, securing full-time return offer."
+    }
+  ],
+  
+  "projects": [
+    {
+      "id": "suwp",
+      "title": "SUWP Data Modernization Program",
+      "subtitle": "Serverless Underwriting Analytics Platform",
+      "duration": "July 2025 - Present",
+      "description": "Modernized underwriting analytics infrastructure powering quotation pricing for small group insurance market, directly feeding actuarial calculations used by underwriters and data science teams to generate premium quotes.",
+      "problem": "Legacy PostgreSQL infrastructure was expensive ($24K annually) and slow, creating bottlenecks in quote generation that directly impacted millions in annual premium revenue.",
+      "architecture": "Serverless data platform with S3-triggered Lambda functions parsing Protobuf files, writing to 320+ DynamoDB tables with yyyy/mm/dd/hh partitioning, and Redshift Spectrum external tables for analytics queries. CloudWatch and Athena observability infrastructure tracks Lambda execution metrics and data validation.",
+      "stack": ["AWS Lambda", "S3", "DynamoDB", "Redshift Spectrum", "Terraform", "Python", "Athena", "CloudWatch"],
+      "scale": "80K+ files, 320+ tables, 10K+ columns, 99.9% data validation accuracy",
+      "impact": [
+        "95% infrastructure cost reduction ($24K annually)",
+        "60% faster quote generation for underwriters",
+        "40% database performance improvement",
+        "Secured FY2026 executive budget approval"
+      ],
+      "featured": true
+    },
+    {
+      "id": "collateraliq",
+      "title": "CollateralIQ",
+      "subtitle": "AI-Powered Compliance Platform",
+      "duration": "November 2024 - July 2025",
+      "description": "Built AI-powered compliance platform to proactively audit 266M+ annually produced regulated collateral documents, addressing critical regulatory risk after Virginia Bureau of Insurance issued findings three consecutive years.",
+      "problem": "Manual compliance audits were reactive, time-consuming (70% manual prep time), and exposed company to civil monetary penalties of $100K-$1M+ per violation.",
+      "architecture": "End-to-end Airflow DAG workflows extract claim data from Teradata/Oracle, download PDFs, and persist structured metadata with full lineage in PostgreSQL. PHI/PII masking via AWS Comprehend Medical routes sanitized content through LLMs for state-specific disclosure validation. Human-in-the-loop review UI enables compliance reviewers to accept/reject AI findings with rationale.",
+      "stack": ["Apache Airflow", "AWS Bedrock", "Glue", "Lambda", "OpenAI", "Oracle", "PostgreSQL", "Python", "React", "S3", "Teradata"],
+      "scale": "266M+ annual documents, 2,000 records per batch, parallelized multi-threaded workers",
+      "impact": [
+        "70% reduction in manual audit prep time",
+        "24-48 hour audit turnaround",
+        "Zero processing failures achieved",
+        "100% claim-to-document traceability",
+        "Prevented $100K-$1M+ in potential penalties"
+      ],
+      "featured": true
+    },
+    {
+      "id": "metagenai",
+      "title": "MetagenAI",
+      "subtitle": "Enterprise Metadata Intelligence Platform",
+      "duration": "February 2024 - July 2025",
+      "description": "Built metadata intelligence platform ingesting enterprise data from Atlassian and GitHub to optimize LLM Retrieval-Augmented-Graph (RAG) response efficiency within Neo4j graph database.",
+      "problem": "Engineering teams lacked efficient access to enterprise metadata, causing slow time-to-insight and duplicated effort across 200+ teams.",
+      "architecture": "RESTful APIs consume Atlassian and GitHub endpoints, storing structured metadata in PostgreSQL with Redis caching. Neo4j graph database enables LLM RAG optimization with relationship traversal. React frontend provides search and exploration interface.",
+      "stack": ["Python", "Neo4j", "PostgreSQL", "Redis", "OpenAI API", "LangGraph", "React", "AWS Lambda"],
+      "scale": "200+ engineering teams, 15-20 FTE hours saved weekly",
+      "impact": [
+        "50% improvement in data retrieval speeds",
+        "Secured $2M in AI infrastructure funding",
+        "Enabled AI department growth from 5 to 15+ headcount",
+        "15-20 FTE hours saved weekly"
+      ],
+      "featured": true
+    },
+    {
+      "id": "provider-inquiry",
+      "title": "Provider Inquiry Tool",
+      "subtitle": "High-Availability Provider Network API",
+      "duration": "February 2023 - February 2024",
+      "description": "Deployed high-availability provider network inquiry system within MyCigna customer application to improve member experience and enable self-service provider searches.",
+      "problem": "On-premises data retrieval took hours, driving call center volume and reducing customer satisfaction scores.",
+      "architecture": "Real-time data synchronization between DynamoDB and AppSync GraphQL endpoints with Lambda resolvers. Databricks-to-AWS migration pipeline using S3, Glue, and Lambda. Splunk dashboards track AWS service errors and performance metrics.",
+      "stack": ["AWS AppSync", "DynamoDB", "Lambda", "Databricks", "Glue", "S3", "OpenSearch", "GraphQL", "Splunk"],
+      "scale": "1500+ daily users, 220K+ annual queries, <1 minute latency",
+      "impact": [
+        "Query latency reduced from hours to <1 minute",
+        "20% reduction in call center inquiries",
+        "$150K+ estimated annual savings in support costs",
+        "30% improvement in data retrieval performance",
+        "25% reduction in incident response time"
+      ],
+      "featured": true
+    },
+    {
+      "id": "etl-optimization",
+      "title": "Enterprise ETL Re-Architecture",
+      "subtitle": "Lambda to Glue Migration",
+      "duration": "February 2024 - July 2025",
+      "description": "Re-engineered ETL architecture from Lambda to Glue to eliminate timeout incidents and improve reliability for business-critical analytics systems serving 200+ engineering teams.",
+      "problem": "Lambda-based ETL pipelines hit 15-minute timeout limits processing 100K+ daily records, causing data delays and reliability issues.",
+      "architecture": "Horizontal scaling with AWS Glue jobs processing 100K+ records daily. Eliminated serverless execution limits through distributed processing.",
+      "stack": ["AWS Glue", "Lambda", "Python", "S3", "Redshift"],
+      "scale": "100K+ daily records, 200+ engineering teams served",
+      "impact": [
+        "30% efficiency improvement",
+        "Zero timeout incidents",
+        "Improved data pipeline reliability for 200+ teams"
+      ],
+      "featured": false
+    },
+    {
+      "id": "covid-analytics",
+      "title": "COVID-19 Population Health Analytics",
+      "subtitle": "Predictive Risk Modeling",
+      "duration": "May 2022 - August 2022",
+      "description": "Analyzed 2.5M+ longitudinal patient records to identify post-COVID outcome trends and segment high-risk cohorts for targeted interventions.",
+      "problem": "Post-COVID patient outcomes were poorly understood, limiting ability to target preventive interventions effectively.",
+      "architecture": "Regression analysis and time series techniques on 2.5M+ patient records. Predictive models using gradient boosting and EDA. K-means clustering and KNN classification for cohort segmentation.",
+      "stack": ["Python", "scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+      "scale": "2.5M+ patient records analyzed",
+      "impact": [
+        "10% reduction in hospitalization rates",
+        "Won 1st place in TECDP Summer Innovation Project 2022",
+        "CEO recognition during company-wide town hall"
+      ],
+      "featured": false
+    }
+  ],
+  
+  "philosophy": {
+    "title": "Systems Philosophy",
+    "content": "Production AI systems require more than models that train—they require systems that run. After building platforms serving 1500+ daily users and securing $2M in funding, I've learned that reliability, observability, and cost-efficiency matter as much as model performance.\n\nScalability isn't about handling theoretical load—it's about making architectural decisions that balance performance, cost, and complexity. Serverless architectures can reduce costs 95% while improving speed 60%, but only with careful design around hot partitions, data typing, and observability. I've optimized databases by 40% not through better algorithms, but through understanding access patterns and partition strategies.\n\nML production differs fundamentally from experimentation. Notebooks that train models become systems that ingest data, mask PHI/PII, route through LLMs, implement human-in-the-loop governance, and maintain audit trails. The difference between a prototype and a production system is observability infrastructure, fault tolerance, and separation of concerns.\n\nCost and performance aren't opposing forces—they're design constraints that drive better architecture. Reducing infrastructure costs from $24K to $90 annually while improving performance 60% required rethinking the entire stack, not just optimizing existing code. Every architectural decision has a cost dimension: compute, storage, data transfer, and operational overhead.\n\nReliability is built through observability and governance. CloudWatch dashboards, Athena queries, and custom logging aren't overhead—they're how you achieve 99.9% data validation accuracy and zero timeout incidents. Human-in-the-loop systems aren't bureaucracy—they're how you maintain explainability and regulatory compliance while leveraging AI capabilities."
+  },
+  
+  "skills": {
+    "ai_ml": {
+      "category": "AI/ML Infrastructure",
+      "items": ["OpenAI API", "AWS Bedrock", "LangGraph", "LangSmith", "RAG Systems", "Neo4j", "PyTorch", "TensorFlow", "scikit-learn", "XGBoost"]
+    },
+    "cloud": {
+      "category": "Cloud & Serverless",
+      "items": ["AWS Lambda", "S3", "DynamoDB", "Redshift", "Glue", "AppSync", "Step Functions", "SageMaker", "EC2", "EKS", "IAM", "CloudWatch"]
+    },
+    "data": {
+      "category": "Data Engineering",
+      "items": ["Apache Airflow", "Apache Spark", "Kafka", "PostgreSQL", "Redis", "MongoDB", "Oracle", "Teradata", "Snowflake", "Databricks"]
+    },
+    "devops": {
+      "category": "DevOps & IaC",
+      "items": ["Terraform", "Terragrunt", "Docker", "Kubernetes", "ArgoCD", "GitHub Actions", "Jenkins", "CloudBees"]
+    },
+    "languages": {
+      "category": "Languages & Frameworks",
+      "items": ["Python", "TypeScript", "JavaScript", "SQL", "R", "Next.js", "React", "Node.js"]
+    },
+    "tools": {
+      "category": "Observability & Analytics",
+      "items": ["Splunk", "CloudWatch", "Athena", "Tableau", "Power BI", "Pandas", "NumPy"]
+    }
+  },
+  
+  "education": [
+    {
+      "id": "uconn-ms",
+      "degree": "Master of Science in Quantitative Economics",
+      "school": "University of Connecticut",
+      "location": "Storrs, CT",
+      "duration": "Aug 2021 - Dec 2022"
+    },
+    {
+      "id": "uconn-bs",
+      "degree": "Bachelor of Science in Economics & Microbiology",
+      "school": "University of Connecticut",
+      "location": "Storrs, CT",
+      "duration": "Aug 2017 - May 2021"
+    }
+  ],
+  
+  "certifications": [
+    {
+      "id": "aws-saa",
+      "name": "AWS Solutions Architect Associate",
+      "issuer": "Amazon Web Services",
+      "code": "SAA-C03",
+      "year": "2024"
+    },
+    {
+      "id": "aws-cp",
+      "name": "AWS Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "code": "CLF-C02",
+      "year": "2023"
+    }
+  ],
+  
+  "awards": [
+    {
+      "id": "ceo-recognition",
+      "title": "CEO Recognition - 1st Place Innovation Project",
+      "description": "Won 1st place in TECDP Summer Innovation Project 2022, recognized by CEO David Cordani during company-wide town hall",
+      "year": "2022"
+    },
+    {
+      "id": "funding-secured",
+      "title": "Secured $2M AI Infrastructure Funding",
+      "description": "Led MetagenAI project that drove AI department expansion for FY2025",
+      "year": "2024"
+    },
+    {
+      "id": "executive-recognition",
+      "title": "Executive Leadership Recognition",
+      "description": "Co-led enterprise-wide Foster Love initiative distributing 1,000+ duffle bag kits, receiving executive acknowledgment",
+      "year": "2023"
+    }
+  ],
+  
+  "contact": {
+    "cta": "Open to building production AI/ML infrastructure systems. Reach out to discuss opportunities.",
+    "email": "alshammaryomar@proton.me",
+    "preferredContact": "email"
+  }
+}

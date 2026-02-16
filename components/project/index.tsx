@@ -9,7 +9,7 @@ export const ProjectSection = () => {
 		<section ref={sectionRef}>
 			<StickySectionHeader
 				id="projects"
-				title="Personal Projects"
+				title="Selected Work"
 				amount={PersonalProjects.length}
 				sectionRef={sectionRef}
 			/>
