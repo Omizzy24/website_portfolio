@@ -21,9 +21,17 @@ export const Footer: React.FC = () => (
 		</div>
 
 		<div className="max-w-6xl mx-auto px-6 flex flex-row items-center justify-between gap-4">
-			<div className="font-mono text-center text-white md:text-left z-10 ml-3">
-				<span className="font-bold text-teal-300">OAS</span>
-				{" "}&copy; {new Date().getFullYear()}
+			<div className="flex items-center gap-2 z-10 ml-3">
+				<Image
+					src="/brand.svg"
+					alt="OA"
+					width={32}
+					height={32}
+					className="opacity-80"
+				/>
+				<span className="font-mono text-sm text-gray-400">
+					&copy; {new Date().getFullYear()}
+				</span>
 			</div>
 			<div className="flex">
 				<Button
