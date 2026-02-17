@@ -8,7 +8,7 @@ type SocialConfigLike = Record<string, string>;
 
 export const SocialConfig: SocialConfigLike = {
 	github: "https://github.com/Omizzy24",
-	linkedin: "https://linkedin.com/in/omar-al-shammary",
+	linkedin: "https://www.linkedin.com/in/omar-al-shammary02518372/",
 	email: "mailto:alshammaryomar@proton.me",
 };
 

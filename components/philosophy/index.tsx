@@ -1,33 +1,33 @@
 import { useRef } from "react";
 import { Card, CardContent } from "../ui/card";
 import { StickySectionHeader } from "../section/sticky-header";
-import { Wrench, DollarSign, BarChart3, Shield, Users } from "lucide-react";
+import { Database, Shield, GitBranch, Users, Zap } from "lucide-react";
 
 const principles = [
 	{
-		icon: Wrench,
-		title: "Build It So It Runs at 3 AM",
-		body: "I don\u2019t build things that work in demos. I build things that work when nobody\u2019s watching \u2014 at 3 AM on a Saturday, under load, with bad input. If a system needs me awake to stay alive, I haven\u2019t finished building it.",
-	},
-	{
-		icon: DollarSign,
-		title: "Every Dollar Is a Design Decision",
-		body: "I cut a team\u2019s cloud spend from $24K to $90 a year. Not by turning things off \u2014 by rethinking what should exist in the first place. Compute, storage, data transfer: each one is an architectural choice, not a line item to accept.",
-	},
-	{
-		icon: BarChart3,
-		title: "Measure First, Then Move",
-		body: "Before I refactor anything, I instrument it. CloudWatch, Athena, custom logging \u2014 whatever it takes to see what\u2019s actually happening. Gut feelings don\u2019t survive production. Data does.",
+		icon: Database,
+		title: "Build for Scale, Not Demos",
+		body: "I designed Airflow DAGs to process millions of claim records in parallel batches, landing them in S3 with full lineage tracking. The system handles thousands of documents concurrently without blocking or single-point failures. Production systems need to work at 3 AM under load, not just in presentations.",
 	},
 	{
 		icon: Shield,
-		title: "Complexity Is Debt",
-		body: "The best architecture is the one the next engineer can understand without a walkthrough. I pick boring, proven patterns over clever ones. If I can\u2019t explain the tradeoff in two sentences, I haven\u2019t thought it through enough.",
+		title: "Governance First, AI Second",
+		body: "Before any LLM interaction, I implement PII/PHI detection and masking. Every discrepancy gets full metadata for audit trails suitable for market conduct exams. Human-in-the-loop review isn't optional — it's how you maintain explainability in regulated environments.",
+	},
+	{
+		icon: GitBranch,
+		title: "Separation of Concerns",
+		body: "I enforce strong architectural boundaries: ingestion, AI reasoning, human review, and reporting are independently observable and debuggable. When compliance issues arise, you need to trace from claim to document to audit result without guesswork.",
 	},
 	{
 		icon: Users,
-		title: "Ship for the Team, Not the Ticket",
-		body: "I think past the Jira ticket. Who maintains this after me? What breaks when requirements change? The goal isn\u2019t to close a story \u2014 it\u2019s to leave the codebase better than I found it.",
+		title: "Human Feedback Loops",
+		body: "I built UIs where compliance reviewers can accept or reject findings, add rationale, and feed corrections back into the system. The goal isn't to replace humans — it's to give them tools that scale with regulatory requirements and document volumes.",
+	},
+	{
+		icon: Zap,
+		title: "Proactive, Not Reactive",
+		body: "Instead of waiting for regulators to find compliance issues months later, I built systems that audit collaterals within 24-48 hours of production. This shifts compliance from reactive manual processes to continuous preventative monitoring.",
 	},
 ];
 
@@ -37,7 +37,7 @@ export const PhilosophySection = () => {
 		<section ref={sectionRef}>
 			<StickySectionHeader
 				id="philosophy"
-				title="How I Think About Building"
+				title="How I Build Systems"
 				sectionRef={sectionRef}
 			/>
 
