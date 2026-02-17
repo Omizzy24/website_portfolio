@@ -6,28 +6,28 @@ import { Database, Shield, GitBranch, Users, Zap } from "lucide-react";
 const principles = [
 	{
 		icon: Database,
-		title: "Build for Scale, Not Demos",
-		body: "I designed Airflow DAGs to process millions of claim records in parallel batches, landing them in S3 with full lineage tracking. The system handles thousands of documents concurrently without blocking or single-point failures. Production systems need to work at 3 AM under load, not just in presentations.",
+		title: "I Build for Production, Not Presentations",
+		body: "When I designed those Airflow DAGs for CollateralIQ, they had to process millions of claim records without breaking. We're talking thousands of documents running in parallel — because when regulators are watching, your system better work at 2 AM on a weekend. That architecture saved us from compliance penalties that could have cost hundreds of thousands.",
 	},
 	{
 		icon: Shield,
-		title: "Governance First, AI Second",
-		body: "Before any LLM interaction, I implement PII/PHI detection and masking. Every discrepancy gets full metadata for audit trails suitable for market conduct exams. Human-in-the-loop review isn't optional — it's how you maintain explainability in regulated environments.",
+		title: "Compliance Isn't an Afterthought",
+		body: "Before any data touches an LLM, I mask the PII. Every decision gets logged for audit trails that regulators actually accept. The human-in-the-loop workflows I built aren't just nice-to-have — they're what kept us compliant while processing 266 million documents annually. That's the difference between innovation and liability.",
 	},
 	{
 		icon: GitBranch,
-		title: "Separation of Concerns",
-		body: "I enforce strong architectural boundaries: ingestion, AI reasoning, human review, and reporting are independently observable and debuggable. When compliance issues arise, you need to trace from claim to document to audit result without guesswork.",
+		title: "I Keep Things Simple on Purpose",
+		body: "My MetagenAI architecture had clear boundaries: data ingestion, reasoning, review, reporting. Each piece works independently. When something breaks (and it will), you can debug one component without taking down the whole system. This approach helped us secure $2M in funding because investors could actually understand what we built.",
 	},
 	{
 		icon: Users,
-		title: "Human Feedback Loops",
-		body: "I built UIs where compliance reviewers can accept or reject findings, add rationale, and feed corrections back into the system. The goal isn't to replace humans — it's to give them tools that scale with regulatory requirements and document volumes.",
+		title: "Humans Make the Final Call",
+		body: "I don't build black boxes. The compliance teams using CollateralIQ can accept findings, reject them, and explain why. That feedback loop improved our accuracy and gave auditors the transparency they needed. The result? We went from reactive compliance to catching issues within 24-48 hours of document production.",
 	},
 	{
 		icon: Zap,
-		title: "Proactive, Not Reactive",
-		body: "Instead of waiting for regulators to find compliance issues months later, I built systems that audit collaterals within 24-48 hours of production. This shifts compliance from reactive manual processes to continuous preventative monitoring.",
+		title: "I Measure What Matters",
+		body: "The MetagenAI recommendation system didn't just 'improve user experience' — it cut dataset discovery time by 50% and saved 15-20 FTE hours weekly. CollateralIQ prevented Virginia from issuing findings for the first time in three years. When you can put numbers on the business impact, that's when executives pay attention.",
 	},
 ];
 
