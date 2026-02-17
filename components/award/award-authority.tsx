@@ -24,11 +24,11 @@ export const AwardGroup: React.FC<AwardGroupProps> = ({
 			whileHover={{ scale: 1.01 }}
 			transition={{ type: "spring", bounce: 0.2 }}
 		>
-			<Card className="border-purple-500/20 bg-gray-900/50">
+			<Card className="border-teal-500/20 bg-gray-900/50">
 				<CardContent className="p-4.5 md:p-6">
 					<div className="space-y-6">
 						{/* Authority Badge */}
-						<Badge className="inline-flex items-center gap-2 px-3 py-1 text-base bg-purple-500/10 hover:bg-purple-500/20 transition-colors w-fit">
+						<Badge className="inline-flex items-center gap-2 px-3 py-1 text-base bg-teal-500/10 hover:bg-teal-500/20 transition-colors w-fit">
 							<Image
 								src={authority.image}
 								alt={authority.name}
@@ -36,7 +36,7 @@ export const AwardGroup: React.FC<AwardGroupProps> = ({
 								height={24}
 								className="rounded-lg [filter:hue-rotate(-10deg)_saturate(70%)_brightness(0.9)]"
 							/>
-							<span className="font-medium text-purple-400">
+							<span className="font-medium text-teal-400">
 								{authority.name}
 							</span>
 						</Badge>

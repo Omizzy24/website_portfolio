@@ -18,14 +18,25 @@ const offbitDots = LocalFont({ src: './fonts/offbit-dots-bold.ttf', variable: "-
 
 export const metadata: Metadata = {
 	title: {
-		default: "Mike Medved",
-		template: `Mike Medved - %s`,
+		default: "Omar Al-Shammary",
+		template: `Omar Al-Shammary - %s`,
 	},
 	description:
-		"SWE @ Walmart. I love figuring out how things work and writing apps to help people.",
+		"Production AI/ML Infrastructure Engineer. Building serverless data platforms, enterprise RAG systems, and high-availability APIs at scale.",
 	icons: {
 		icon: "/favicon.ico",
-		apple: "/apple-touch-icon.png",
+	},
+	openGraph: {
+		title: "Omar Al-Shammary — AI/ML Infrastructure Engineer",
+		description: "Production AI/ML Infrastructure Engineer specializing in serverless data platforms, enterprise RAG systems, and high-availability APIs. $2M funding secured. 95% cost reduction. 1500+ daily users.",
+		url: "https://omaralshammary.com",
+		siteName: "Omar Al-Shammary",
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Omar Al-Shammary — AI/ML Infrastructure Engineer",
+		description: "Production AI/ML Infrastructure Engineer specializing in serverless data platforms, enterprise RAG systems, and high-availability APIs.",
 	},
 };
 

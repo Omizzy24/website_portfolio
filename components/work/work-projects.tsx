@@ -69,7 +69,7 @@ export function WorkProjects({ projects }: WorkProjectsProps) {
 	if (!projects?.length) return null;
 
 	return (
-		<motion.div layout className="mt-6 border-t border-purple-500/20 pt-4">
+		<motion.div layout className="mt-6 border-t border-teal-500/20 pt-4">
 			<motion.div layout className="grid gap-4 md:grid-cols-3 relative">
 				{projects.map(project => (
 					<ProjectCard

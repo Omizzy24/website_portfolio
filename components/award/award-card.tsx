@@ -6,7 +6,7 @@ import { Trophy, Calendar, AwardIcon } from "lucide-react";
 
 export const AwardCard: React.FC<{ award: Award }> = ({ award }) => {
 	return (
-		<Card className="border-purple-500/20 bg-gray-900/80">
+		<Card className="border-teal-500/20 bg-gray-900/80">
 			<CardContent className="p-3 md:p-4">
 				<div className="flex flex-col gap-3">
 					<div className="flex items-start gap-3">
@@ -26,7 +26,7 @@ export const AwardCard: React.FC<{ award: Award }> = ({ award }) => {
 							href={award.href}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="flex items-center gap-2 text-purple-400 hover:text-purple-300"
+							className="flex items-center gap-2 text-teal-400 hover:text-teal-300"
 						>
 							<AwardIcon className="h-4 w-4" />
 							<span>Credential</span>

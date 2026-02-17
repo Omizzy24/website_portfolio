@@ -106,13 +106,13 @@ export const ProjectCard: React.FC<WorkProjectCardProps> = ({ project }) => {
 			onOpenChange={trigger}
 			className={css(expanded && "cursor-pointer")}
 		>
-			<Card className="border-purple-500/20 bg-gray-900/50 hover:bg-gray-900/80 transition-colors h-full">
+			<Card className="border-teal-500/20 bg-gray-900/50 hover:bg-gray-900/80 transition-colors h-full">
 				<CardContent className={css("p-3 md:p-4", expanded && "pb-4")}>
 					<DisclosureTrigger>
 						<div className="flex items-start justify-between gap-4">
 							<div className="flex-1 min-w-0">
 								<div className="flex items-center gap-2 mb-2">
-									<Icon className="h-4 w-4 text-purple-400" />
+									<Icon className="h-4 w-4 text-teal-400" />
 									<h3 className="font-medium truncate">
 										{project.title}
 									</h3>
@@ -146,10 +146,10 @@ export const ProjectCard: React.FC<WorkProjectCardProps> = ({ project }) => {
 
 							{typeof project.description === "function" && project.description}
 
-							<div className="mt-4 md:border-t border-purple-500/20 pt-0 md:pt-4">
+							<div className="mt-4 md:border-t border-teal-500/20 pt-0 md:pt-4">
 								<div className="flex items-start justify-between mt-4">
 									<div className="basis-sm">
-										<div className="flex items-center gap-2 text-sm text-purple-400 hover:text-purple-300">
+										<div className="flex items-center gap-2 text-sm text-teal-400 hover:text-teal-300">
 											<GoLink href={project.href} />
 										</div>
 									</div>

@@ -40,9 +40,9 @@ export const PositionTimeline: React.FC<{
 				>
 					{hasMultiplePositions && (
 						<div className="absolute left-[14px] top-2 bottom-0 flex-col items-center hidden sm:flex">
-							<motion.div layout className="w-3 h-3 rounded-full bg-purple-500/40 ring-4 ring-purple-500/20" />
+							<motion.div layout className="w-3 h-3 rounded-full bg-teal-500/40 ring-4 ring-teal-500/20" />
 							{posIndex !== positions.length - 1 && (
-								<motion.div layout className="w-0.5 flex-1 bg-purple-500/20" />
+								<motion.div layout className="w-0.5 flex-1 bg-teal-500/20" />
 							)}
 						</div>
 					)}

@@ -38,7 +38,7 @@ export const WorkExperience: ExperienceEntry[] = [
 			{
 				title: "DevOps Engineer",
 				type: "Full Time",
-				description: "Architected serverless data platform processing 80K+ files across 320+ DynamoDB tables using S3-triggered Lambda functions with Protobuf parsing and Redshift Spectrum external tables. Optimized DynamoDB runtime configuration by troubleshooting hot partition issues and refactoring nested array structures, achieving 40% performance improvement. Reduced infrastructure costs 95% ($24K annually) while improving underwriter quote generation speed 60%, directly supporting millions in annual premium revenue. Built observability infrastructure achieving 99.9% data validation accuracy, securing FY2026 executive budget approval.",
+				description: "Own the serverless data platform processing 80K+ files across 320+ DynamoDB tables — S3-triggered Lambdas with Protobuf parsing piped into Redshift Spectrum external tables for downstream analytics. Diagnosed and resolved hot partition issues in DynamoDB by refactoring nested array structures and tuning runtime configuration, yielding a 40% throughput improvement. Drove a 95% infrastructure cost reduction ($24K → $90/yr) while accelerating underwriter quote generation 60%, directly supporting millions in annual premium revenue. Designed the observability layer — CloudWatch alarms, Athena audit queries, and validation pipelines — achieving 99.9% data accuracy and securing FY2026 executive budget approval.",
 				start: "2025-07-01",
 				current: true,
 				location: "Bloomfield, CT",
@@ -46,7 +46,7 @@ export const WorkExperience: ExperienceEntry[] = [
 			{
 				title: "Software Engineer",
 				type: "Full Time",
-				description: "Re-engineered ETL architecture from Lambda to Glue achieving 30% efficiency improvement and zero timeout incidents through horizontal scaling, processing 100K+ daily records for 200+ engineering teams. Built RESTful APIs ingesting enterprise metadata with Neo4j graph database for LLM RAG optimization, improving retrieval speeds 50% and saving 15-20 FTE hours weekly. Secured $2M funding for AI infrastructure expansion by leading MetagenAI project, enabling AI department growth from 5 to 15+ headcount. Resolved critical production outage within 2 hours leading 100+ person incident response, preventing $500K+ in claims processing errors.",
+				description: "Re-architected the ETL backbone from Lambda to Glue, achieving 30% efficiency gains and zero timeout incidents through horizontal scaling — processing 100K+ daily records consumed by 200+ engineering teams. Built RESTful APIs backed by a Neo4j graph database to ingest enterprise metadata for LLM RAG optimization, cutting retrieval latency 50% and saving 15–20 FTE hours weekly. Led the MetagenAI initiative that secured $2M in funding for AI infrastructure expansion, growing the AI department from 5 to 15+ headcount. Coordinated a 100+ person incident response to resolve a critical production outage within 2 hours, preventing $500K+ in claims processing errors.",
 				start: "2024-02-01",
 				end: "2025-07-01",
 				location: "Bloomfield, CT",
@@ -54,7 +54,7 @@ export const WorkExperience: ExperienceEntry[] = [
 			{
 				title: "Solutions Architect",
 				type: "Full Time",
-				description: "Designed real-time data synchronization system between DynamoDB and AppSync GraphQL endpoints, reducing query latency from hours to <1 minute for 1500+ daily users (220K+ annual queries). Led production release of AWS Glue jobs for provider data migration from on-premises to cloud, reducing data retrieval times 30%. Achieved 15% reduction in data-related production incidents, preventing $2.5M in subsidiary budget overruns through improved data quality.",
+				description: "Designed a real-time sync layer between DynamoDB and AppSync GraphQL, collapsing query latency from hours to under 1 minute for 1,500+ daily users generating 220K+ annual queries. Led production release of AWS Glue jobs migrating provider data from on-premises to cloud, reducing data retrieval times 30%. Achieved a 15% reduction in data-related production incidents, preventing $2.5M in subsidiary budget overruns through improved data quality and governance.",
 				start: "2023-02-01",
 				end: "2024-02-01",
 				location: "Bloomfield, CT",
@@ -62,7 +62,7 @@ export const WorkExperience: ExperienceEntry[] = [
 			{
 				title: "Data Analyst Intern",
 				type: "Internship",
-				description: "Analyzed 2.5M+ longitudinal patient records using regression analysis and time series techniques to identify post-COVID outcome trends. Built predictive models using gradient boosting and EDA, then segmented high-risk cohorts using K-means clustering and KNN classification, informing targeted interventions that lowered hospitalization rates 10%. Won 1st place in TECDP Summer Innovation Project 2022, recognized by CEO David Cordani during company-wide town hall, securing full-time return offer.",
+				description: "Analyzed 2.5M+ longitudinal patient records using regression analysis and time series techniques to surface post-COVID outcome trends. Built predictive models with gradient boosting and segmented high-risk cohorts via K-means clustering and KNN classification, informing targeted interventions that lowered hospitalization rates 10%. Won 1st place in the TECDP Summer Innovation Project 2022, recognized by CEO David Cordani during a company-wide town hall — secured a full-time return offer.",
 				start: "2022-05-01",
 				end: "2022-08-01",
 				location: "Bloomfield, CT",

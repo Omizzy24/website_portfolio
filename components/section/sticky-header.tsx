@@ -26,6 +26,7 @@ export function StickySectionHeader({ id, title, amount, className, sectionRef }
 	} = useSectionControls();
 	
 	useEffect(() => {
+		const currentRef = ref.current;
 		const observer = new IntersectionObserver(
 			([e]) => {
 				if (e.boundingClientRect.top <= headerHeight) {
@@ -37,13 +38,13 @@ export function StickySectionHeader({ id, title, amount, className, sectionRef }
 			{ threshold: [1], rootMargin: `-${headerHeight}px 0px 0px 0px` },
 		);
 
-		if (ref.current) {
-			observer.observe(ref.current);
+		if (currentRef) {
+			observer.observe(currentRef);
 		}
 
 		return () => {
-			if (ref.current) {
-				observer.unobserve(ref.current);
+			if (currentRef) {
+				observer.unobserve(currentRef);
 			}
 		};
 	}, []);
@@ -55,7 +56,7 @@ export function StickySectionHeader({ id, title, amount, className, sectionRef }
 		});
 
 		return () => unregisterSection(id);
-	}, [sectionRef]);
+	}, [id, title, sectionRef, registerSection, unregisterSection]);
 	
 	const handleClick = (event: React.MouseEvent) => openNavigation(id, event);
 
@@ -70,11 +71,11 @@ export function StickySectionHeader({ id, title, amount, className, sectionRef }
 				backdropFilter: isStuck ? "blur(8px)" : "none",
 			}}
 		>
-			<h2 onClick={handleClick} className="text-2xl font-semibold text-purple-400 font-offbit cursor-pointer">
+			<h2 onClick={handleClick} className="text-2xl font-semibold text-teal-400 font-offbit cursor-pointer">
 				{title}
 			</h2>
-			<Separator className="flex-1 bg-purple-500/40" />
-			{amount && <h4 className="text-xl text-purple-200 font-offbit">{amount}</h4>}
+			<Separator className="flex-1 bg-teal-500/40" />
+			{amount && <h4 className="text-xl text-teal-200 font-offbit">{amount}</h4>}
 		</motion.div>
 	);
 }

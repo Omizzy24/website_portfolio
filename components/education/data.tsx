@@ -13,7 +13,7 @@ export type EducationEntry = {
 };
 
 const Link: React.FC<PropsWithChildren<{ href: string }>> = ({ href, children }) => (
-	<a className="text-purple-300 hover:text-purple-400 transition-all duration-500" href={href} target="_blank">
+	<a className="text-teal-300 hover:text-teal-400 transition-all duration-500" href={href} target="_blank">
 		{children}
 	</a>
 );

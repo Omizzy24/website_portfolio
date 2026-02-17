@@ -31,12 +31,12 @@ export const WorkCard: React.FC<WorkCardProps> = ({ company, icon, positions, pr
 			onOpenChange={setExpanded}
 			className="motion-safe:hover:scale-[1.01] transition-transform"
 		>
-			<Card className="border-purple-500/20 bg-gray-900/50">
+			<Card className="border-teal-500/20 bg-gray-900/50">
 				<CardContent className="p-4.5 md:p-6">
 					<DisclosureTrigger>
 						<div className="flex items-center justify-between cursor-pointer">
 							<div className="group flex items-center gap-0">
-								<div className="flex items-center justify-center w-12 h-10 rounded-l-lg bg-purple-500/10 group-hover:bg-purple-500/20 border-y border-l border-purple-500/40 mr-[-1px] transition-colors duration-200">
+								<div className="flex items-center justify-center w-12 h-10 rounded-l-lg bg-teal-500/10 group-hover:bg-teal-500/20 border-y border-l border-teal-500/40 mr-[-1px] transition-colors duration-200">
 									<Image
 										src={icon}
 										alt={company}
@@ -45,8 +45,8 @@ export const WorkCard: React.FC<WorkCardProps> = ({ company, icon, positions, pr
 										className="rounded-lg [filter:hue-rotate(-10deg)_saturate(70%)_brightness(0.9)]"
 									/>
 								</div>
-								<Badge className="inline-flex items-center px-3 py-1.5 text-base bg-purple-500/10 hover:bg-purple-500/20 transition-colors duration-200 rounded-l-none border-y border-r border-purple-500/40 h-10">
-									<span className="font-medium text-purple-400">
+								<Badge className="inline-flex items-center px-3 py-1.5 text-base bg-teal-500/10 hover:bg-teal-500/20 transition-colors duration-200 rounded-l-none border-y border-r border-teal-500/40 h-10">
+									<span className="font-medium text-teal-400">
 										{company}
 									</span>
 								</Badge>
@@ -65,7 +65,7 @@ export const WorkCard: React.FC<WorkCardProps> = ({ company, icon, positions, pr
 									</div>
 								)}
 								<ChevronDown 
-									className="h-5 w-5 text-purple-400 transition-transform duration-500"
+									className="h-5 w-5 text-teal-400 transition-transform duration-500"
 									style={{ transform: expanded ? 'rotate(180deg)' : 'rotate(0deg)' }}
 								/>
 							</div>

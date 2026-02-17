@@ -10,11 +10,11 @@ import { LocationDisplay } from "../location-display";
 import { Calendar, GraduationCap } from "lucide-react";
 
 export const EducationCard: React.FC<{ edu: EducationEntry }> = ({ edu }) => (
-	<Card className="border-purple-500/20 bg-gray-900/50">
+	<Card className="border-teal-500/20 bg-gray-900/50">
 		<CardContent className="p-4.5 md:p-6">
 			<div className="flex flex-col gap-4">
 				{/* Header with Institution */}
-				<Badge className="inline-flex items-center gap-2 px-3 py-1 text-base bg-purple-500/10 hover:bg-purple-500/20 transition-colors w-fit">
+				<Badge className="inline-flex items-center gap-2 px-3 py-1 text-base bg-teal-500/10 hover:bg-teal-500/20 transition-colors w-fit">
 					<Image
 						src={edu.image}
 						alt={edu.institution}
@@ -22,7 +22,7 @@ export const EducationCard: React.FC<{ edu: EducationEntry }> = ({ edu }) => (
 						height={24}
 						className="rounded-lg [filter:hue-rotate(-10deg)_saturate(70%)_brightness(0.9)]"
 					/>
-					<span className="font-medium text-purple-400">
+					<span className="font-medium text-teal-400">
 						{edu.institution}
 					</span>
 				</Badge>
@@ -31,8 +31,8 @@ export const EducationCard: React.FC<{ edu: EducationEntry }> = ({ edu }) => (
 				<div className="flex items-start justify-between gap-4 pl-3">
 					<div className="space-y-1">
 						<div className="flex items-center gap-2">
-							<GraduationCap className="h-6 w-6 text-purple-400" />
-							<h3 className="font-medium text-purple-400">
+							<GraduationCap className="h-6 w-6 text-teal-400" />
+							<h3 className="font-medium text-teal-400">
 								{edu.degreeType}, {edu.major}
 							</h3>
 						</div>
