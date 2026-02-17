@@ -1,33 +1,33 @@
 import { useRef } from "react";
 import { Card, CardContent } from "../ui/card";
 import { StickySectionHeader } from "../section/sticky-header";
-import { Layers, Zap, DollarSign, Bot, Eye } from "lucide-react";
+import { Wrench, DollarSign, BarChart3, Shield, Users } from "lucide-react";
 
 const principles = [
 	{
-		icon: Layers,
-		title: "Systems Over Scripts",
-		body: "Production AI requires more than models that train — it requires systems that run. Reliability, observability, and cost-efficiency matter as much as model performance. Notebooks become pipelines that ingest data, mask PHI/PII, route through LLMs, and maintain audit trails.",
+		icon: Wrench,
+		title: "Build It So It Runs at 3 AM",
+		body: "I don\u2019t build things that work in demos. I build things that work when nobody\u2019s watching \u2014 at 3 AM on a Saturday, under load, with bad input. If a system needs me awake to stay alive, I haven\u2019t finished building it.",
 	},
 	{
 		icon: DollarSign,
-		title: "Cost as Architecture",
-		body: "Cost and performance aren\u2019t opposing forces — they\u2019re design constraints that drive better architecture. Reducing infrastructure from $24K to $90 annually while improving speed 60% required rethinking the entire stack, not optimizing existing code.",
+		title: "Every Dollar Is a Design Decision",
+		body: "I cut a team\u2019s cloud spend from $24K to $90 a year. Not by turning things off \u2014 by rethinking what should exist in the first place. Compute, storage, data transfer: each one is an architectural choice, not a line item to accept.",
 	},
 	{
-		icon: Zap,
-		title: "Scalability Over Hacks",
-		body: "Scalability isn\u2019t about handling theoretical load — it\u2019s about making architectural decisions that balance performance, cost, and complexity. Serverless can cut costs 95%, but only with careful design around hot partitions, data typing, and observability.",
+		icon: BarChart3,
+		title: "Measure First, Then Move",
+		body: "Before I refactor anything, I instrument it. CloudWatch, Athena, custom logging \u2014 whatever it takes to see what\u2019s actually happening. Gut feelings don\u2019t survive production. Data does.",
 	},
 	{
-		icon: Eye,
-		title: "Observability as Foundation",
-		body: "CloudWatch dashboards, Athena queries, and custom logging aren\u2019t overhead — they\u2019re how you achieve 99.9% data validation accuracy and zero timeout incidents. You can\u2019t fix what you can\u2019t see.",
+		icon: Shield,
+		title: "Complexity Is Debt",
+		body: "The best architecture is the one the next engineer can understand without a walkthrough. I pick boring, proven patterns over clever ones. If I can\u2019t explain the tradeoff in two sentences, I haven\u2019t thought it through enough.",
 	},
 	{
-		icon: Bot,
-		title: "AI Agents as Force Multipliers",
-		body: "Human-in-the-loop systems aren\u2019t bureaucracy — they\u2019re how you maintain explainability and regulatory compliance while leveraging AI capabilities. The goal is augmentation, not replacement.",
+		icon: Users,
+		title: "Ship for the Team, Not the Ticket",
+		body: "I think past the Jira ticket. Who maintains this after me? What breaks when requirements change? The goal isn\u2019t to close a story \u2014 it\u2019s to leave the codebase better than I found it.",
 	},
 ];
 
@@ -37,7 +37,7 @@ export const PhilosophySection = () => {
 		<section ref={sectionRef}>
 			<StickySectionHeader
 				id="philosophy"
-				title="Systems Philosophy"
+				title="How I Think About Building"
 				sectionRef={sectionRef}
 			/>
 

@@ -48,11 +48,11 @@ export const Awards: Award[] = [
 	},
 	{
 		authority: 'aws',
-		title: 'AWS Solutions Architect Associate',
+		title: 'AWS Certified Solutions Architect \u2013 Associate (SAA-C03)',
 		description: 'Certified in designing distributed systems on AWS, demonstrating expertise in cloud architecture, security, and cost optimization.',
 		credential: 'SAA-C03',
 		href: 'https://aws.amazon.com/certification/certified-solutions-architect-associate/',
-		date: '2024'
+		date: '2026'
 	},
 	{
 		authority: 'aws',

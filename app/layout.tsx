@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 	description:
 		"Production AI/ML Infrastructure Engineer. Building serverless data platforms, enterprise RAG systems, and high-availability APIs at scale.",
 	icons: {
-		icon: "/favicon.ico",
+		icon: "/favicon.svg",
 	},
 	openGraph: {
 		title: "Omar Al-Shammary — AI/ML Infrastructure Engineer",
