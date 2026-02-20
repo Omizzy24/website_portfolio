@@ -36,7 +36,7 @@ export const WorkExperience: ExperienceEntry[] = [
 		image: "/logos/cigna.png",
 		positions: [
 			{
-				title: "DevOps Engineer",
+				title: "Machine Learning Engineer",
 				type: "Full Time",
 				description: "Implemented serverless data pipeline for Health Rating Engine powering actuarial calculations for small group insurance quotations, processing 80K+ files across 320+ tables on AWS-native architecture (S3, DynamoDB, Lambda)\u2014reducing operational costs by 95% ($24K annually) while improving underwriter quote generation speed by 60%, directly supporting millions in annual premium revenue. Optimized DynamoDB runtime configuration by troubleshooting hot partition issues and refactoring nested array structures, contributing to 40% performance improvement across 10K+ columns. Built observability infrastructure using CloudWatch and Athena for Lambda execution metrics, implementing custom logging for data pipeline monitoring\u2014enabling data-driven optimization decisions that secured FY2026 executive budget approval.",
 				start: "2025-07-01",
@@ -44,7 +44,7 @@ export const WorkExperience: ExperienceEntry[] = [
 				location: "Bloomfield, CT",
 			},
 			{
-				title: "Software Engineer",
+				title: "Generative AI Engineer",
 				type: "Full Time",
 				description: "Re-engineered ETL architecture from Lambda to Glue achieving 30% efficiency improvement and zero timeout incidents by implementing horizontal scaling to process 100K+ records daily, eliminating serverless execution limits for business-critical analytics systems serving 200+ engineering teams. Built RESTful APIs ingesting enterprise metadata improving data retrieval speeds by 50%, optimizing LLM RAG response efficiency within Neo4j graph database\u2014equivalent to 15-20 FTE hours saved weekly. Secured $2M funding for AI infrastructure expansion by leading MetagenAI project, demonstrating technical feasibility and ROI through full-stack implementation\u2014enabling AI department growth from 5 to 15+ headcount for FY2025. Resolved critical production outage within 2 hours by leading AWS troubleshooting with 100+ participants, preventing $500K+ in claims processing errors.",
 				start: "2024-02-01",
@@ -60,7 +60,7 @@ export const WorkExperience: ExperienceEntry[] = [
 				location: "Bloomfield, CT",
 			},
 			{
-				title: "Data Analyst Intern",
+				title: "Data Analyst",
 				type: "Internship",
 				description: "Analyzed 2.5M+ longitudinal patient records using regression analysis and exploratory time series techniques to identify trends in post-COVID outcomes. Built predictive models using gradient boosting, segmented high-risk cohorts using K-means clustering and KNN classification\u2014informing targeted interventions that lowered hospitalization rates by 10%. Led development winning 1st place in TECDP Summer Innovation Project 2022, recognized by CEO David Cordani during company-wide town hall, securing full-time return offer.",
 				start: "2022-05-01",
