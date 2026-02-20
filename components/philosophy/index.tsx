@@ -7,12 +7,12 @@ const principles = [
 	{
 		icon: Database,
 		title: "I Build for Production, Not Presentations",
-		body: "When I designed those Airflow DAGs for CollateralIQ, they had to process millions of claim records without breaking. We're talking thousands of documents running in parallel — because when regulators are watching, your system better work at 2 AM on a weekend. That architecture saved us from compliance penalties that could have cost hundreds of thousands.",
+		body: "When I designed those Airflow DAGs for CollateralIQ, they had to process millions of claim records without breaking. We\u2019re talking thousands of documents running in parallel \u2014 because when regulators are watching, your system better work at 2 AM on a weekend. That architecture saved us from compliance penalties that could have cost hundreds of thousands.",
 	},
 	{
 		icon: Shield,
-		title: "Compliance Isn't an Afterthought",
-		body: "Before any data touches an LLM, I mask the PII. Every decision gets logged for audit trails that regulators actually accept. The human-in-the-loop workflows I built aren't just nice-to-have — they're what kept us compliant while processing 266 million documents annually. That's the difference between innovation and liability.",
+		title: "Compliance Isn\u2019t an Afterthought",
+		body: "Before any data touches an LLM, I mask the PII. Every decision gets logged for audit trails that regulators actually accept. The human-in-the-loop workflows I built aren\u2019t just nice-to-have \u2014 they\u2019re what kept us compliant while processing 266 million documents annually. That\u2019s the difference between innovation and liability.",
 	},
 	{
 		icon: GitBranch,
@@ -22,12 +22,12 @@ const principles = [
 	{
 		icon: Users,
 		title: "Humans Make the Final Call",
-		body: "I don't build black boxes. The compliance teams using CollateralIQ can accept findings, reject them, and explain why. That feedback loop improved our accuracy and gave auditors the transparency they needed. The result? We went from reactive compliance to catching issues within 24-48 hours of document production.",
+		body: "I don\u2019t build black boxes. The compliance teams using CollateralIQ can accept findings, reject them, and explain why. That feedback loop improved our accuracy and gave auditors the transparency they needed. The result? We went from reactive compliance to catching issues within 24-48 hours of document production.",
 	},
 	{
 		icon: Zap,
 		title: "I Measure What Matters",
-		body: "The MetagenAI recommendation system didn't just 'improve user experience' — it cut dataset discovery time by 50% and saved 15-20 FTE hours weekly. CollateralIQ prevented Virginia from issuing findings for the first time in three years. When you can put numbers on the business impact, that's when executives pay attention.",
+		body: "The MetagenAI recommendation system didn\u2019t just \u2018improve user experience\u2019 \u2014 it cut dataset discovery time by 50% and saved 15-20 FTE hours weekly. CollateralIQ prevented Virginia from issuing findings for the first time in three years. When you can put numbers on the business impact, that\u2019s when executives pay attention.",
 	},
 ];
 

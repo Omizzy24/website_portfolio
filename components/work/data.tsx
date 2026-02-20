@@ -38,7 +38,7 @@ export const WorkExperience: ExperienceEntry[] = [
 			{
 				title: "DevOps Engineer",
 				type: "Full Time",
-				description: "Own the serverless data platform processing 80K+ files across 320+ DynamoDB tables — S3-triggered Lambdas with Protobuf parsing piped into Redshift Spectrum external tables for downstream analytics. Diagnosed and resolved hot partition issues in DynamoDB by refactoring nested array structures and tuning runtime configuration, yielding a 40% throughput improvement. Drove a 95% infrastructure cost reduction ($24K → $90/yr) while accelerating underwriter quote generation 60%, directly supporting millions in annual premium revenue. Designed the observability layer — CloudWatch alarms, Athena audit queries, and validation pipelines — achieving 99.9% data accuracy and securing FY2026 executive budget approval.",
+				description: "Implemented serverless data pipeline for Health Rating Engine powering actuarial calculations for small group insurance quotations, processing 80K+ files across 320+ tables on AWS-native architecture (S3, DynamoDB, Lambda)\u2014reducing operational costs by 95% ($24K annually) while improving underwriter quote generation speed by 60%, directly supporting millions in annual premium revenue. Optimized DynamoDB runtime configuration by troubleshooting hot partition issues and refactoring nested array structures, contributing to 40% performance improvement across 10K+ columns. Built observability infrastructure using CloudWatch and Athena for Lambda execution metrics, implementing custom logging for data pipeline monitoring\u2014enabling data-driven optimization decisions that secured FY2026 executive budget approval.",
 				start: "2025-07-01",
 				current: true,
 				location: "Bloomfield, CT",
@@ -46,7 +46,7 @@ export const WorkExperience: ExperienceEntry[] = [
 			{
 				title: "Software Engineer",
 				type: "Full Time",
-				description: "Re-architected the ETL backbone from Lambda to Glue, achieving 30% efficiency gains and zero timeout incidents through horizontal scaling — processing 100K+ daily records consumed by 200+ engineering teams. Built RESTful APIs backed by a Neo4j graph database to ingest enterprise metadata for LLM RAG optimization, cutting retrieval latency 50% and saving 15–20 FTE hours weekly. Led the MetagenAI initiative that secured $2M in funding for AI infrastructure expansion, growing the AI department from 5 to 15+ headcount. Coordinated a 100+ person incident response to resolve a critical production outage within 2 hours, preventing $500K+ in claims processing errors.",
+				description: "Re-engineered ETL architecture from Lambda to Glue achieving 30% efficiency improvement and zero timeout incidents by implementing horizontal scaling to process 100K+ records daily, eliminating serverless execution limits for business-critical analytics systems serving 200+ engineering teams. Built RESTful APIs ingesting enterprise metadata improving data retrieval speeds by 50%, optimizing LLM RAG response efficiency within Neo4j graph database\u2014equivalent to 15-20 FTE hours saved weekly. Secured $2M funding for AI infrastructure expansion by leading MetagenAI project, demonstrating technical feasibility and ROI through full-stack implementation\u2014enabling AI department growth from 5 to 15+ headcount for FY2025. Resolved critical production outage within 2 hours by leading AWS troubleshooting with 100+ participants, preventing $500K+ in claims processing errors.",
 				start: "2024-02-01",
 				end: "2025-07-01",
 				location: "Bloomfield, CT",
@@ -54,7 +54,7 @@ export const WorkExperience: ExperienceEntry[] = [
 			{
 				title: "Solutions Architect",
 				type: "Full Time",
-				description: "Designed a real-time sync layer between DynamoDB and AppSync GraphQL, collapsing query latency from hours to under 1 minute for 1,500+ daily users generating 220K+ annual queries. Led production release of AWS Glue jobs migrating provider data from on-premises to cloud, reducing data retrieval times 30%. Achieved a 15% reduction in data-related production incidents, preventing $2.5M in subsidiary budget overruns through improved data quality and governance.",
+				description: "Deployed high-availability API serving 600+ daily users (220K+ annual queries) by architecting real-time data synchronization between DynamoDB and AppSync GraphQL, reducing query latency from hours to under 1 minute\u2014reducing call center inquiries by 20% (estimated $150K+ annual savings). Led production release of AWS Glue jobs for provider data migration from on-premises to cloud, reducing data retrieval times by 30%. Achieved 15% reduction in data-related production incidents, preventing $2.5M in subsidiary budget overruns through improved data quality.",
 				start: "2023-02-01",
 				end: "2024-02-01",
 				location: "Bloomfield, CT",
@@ -62,7 +62,7 @@ export const WorkExperience: ExperienceEntry[] = [
 			{
 				title: "Data Analyst Intern",
 				type: "Internship",
-				description: "Analyzed 2.5M+ longitudinal patient records using regression analysis and time series techniques to surface post-COVID outcome trends. Built predictive models with gradient boosting and segmented high-risk cohorts via K-means clustering and KNN classification, informing targeted interventions that lowered hospitalization rates 10%. Won 1st place in the TECDP Summer Innovation Project 2022, recognized by CEO David Cordani during a company-wide town hall — secured a full-time return offer.",
+				description: "Analyzed 2.5M+ longitudinal patient records using regression analysis and exploratory time series techniques to identify trends in post-COVID outcomes. Built predictive models using gradient boosting, segmented high-risk cohorts using K-means clustering and KNN classification\u2014informing targeted interventions that lowered hospitalization rates by 10%. Led development winning 1st place in TECDP Summer Innovation Project 2022, recognized by CEO David Cordani during company-wide town hall, securing full-time return offer.",
 				start: "2022-05-01",
 				end: "2022-08-01",
 				location: "Bloomfield, CT",
