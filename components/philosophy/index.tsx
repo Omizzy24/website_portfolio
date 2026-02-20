@@ -1,33 +1,28 @@
 import { useRef } from "react";
 import { Card, CardContent } from "../ui/card";
 import { StickySectionHeader } from "../section/sticky-header";
-import { Database, Shield, GitBranch, Users, Zap } from "lucide-react";
+import { Database, Shield, GitBranch, Users } from "lucide-react";
 
 const principles = [
 	{
 		icon: Database,
-		title: "I Build for Production, Not Presentations",
-		body: "When I designed those Airflow DAGs for CollateralIQ, they had to process millions of claim records without breaking. We\u2019re talking thousands of documents running in parallel \u2014 because when regulators are watching, your system better work at 2 AM on a weekend. That architecture saved us from compliance penalties that could have cost hundreds of thousands.",
+		title: "Scheduling & Orchestration",
+		body: "The Airflow DAGs I designed for CollateralIQ had one job: handle millions of claim records in batches without failing, while meeting compliance and enterprise standards for production. We ran hundreds of thousands of documents in parallel from on-prem Oracle and other warehouses into the cloud. The system runs on a schedule, ensuring no data is lost or misrepresented. Designing it with automation in mind didn\u2019t just keep us out of compliance trouble \u2014 it let us scale from Virginia to CT, NY, TX, and FL, where violations would have run into the millions per state.",
 	},
 	{
 		icon: Shield,
-		title: "Compliance Isn\u2019t an Afterthought",
-		body: "Before any data touches an LLM, I mask the PII. Every decision gets logged for audit trails that regulators actually accept. The human-in-the-loop workflows I built aren\u2019t just nice-to-have \u2014 they\u2019re what kept us compliant while processing 266 million documents annually. That\u2019s the difference between innovation and liability.",
+		title: "Masking Sensitive Data",
+		body: "PII gets masked through our proxy within EKS, well before any data reaches an LLM or AI agent. Every decision is logged so audit trails hold up under scrutiny. There\u2019s always a human-in-the-loop step before anything goes through. The LLM follows golden rules and a negative prompt telling it what to avoid. Walking through multiple fail-safes and tight guardrails across 266 million documents a year \u2014 that\u2019s the line between something that scales in production and something that becomes a liability.",
 	},
 	{
 		icon: GitBranch,
-		title: "I Keep Things Simple on Purpose",
-		body: "My MetagenAI architecture had clear boundaries: data ingestion, reasoning, review, reporting. Each piece works independently. When something breaks (and it will), you can debug one component without taking down the whole system. This approach helped us secure $2M in funding because investors could actually understand what we built.",
+		title: "Architecture With Purpose",
+		body: "The MetagenAI architecture I was part of had four clear lanes: data ingestion, reasoning, review, reporting. Each one works independently. When something breaks \u2014 and it will \u2014 you fix that piece without touching anything else. You make sure data retention is viable, no hallucinations, no invalid data. When AI was first emerging, there was a lot of uncertainty around whether it was safe in a sensitive healthcare platform. Reassuring everyone with clarity and security is part of why we landed $2M in funding and expanded the team. Investors could follow what we built without needing a whiteboard session.",
 	},
 	{
 		icon: Users,
-		title: "Humans Make the Final Call",
-		body: "I don\u2019t build black boxes. The compliance teams using CollateralIQ can accept findings, reject them, and explain why. That feedback loop improved our accuracy and gave auditors the transparency they needed. The result? We went from reactive compliance to catching issues within 24-48 hours of document production.",
-	},
-	{
-		icon: Zap,
-		title: "I Measure What Matters",
-		body: "The MetagenAI recommendation system didn\u2019t just \u2018improve user experience\u2019 \u2014 it cut dataset discovery time by 50% and saved 15-20 FTE hours weekly. CollateralIQ prevented Virginia from issuing findings for the first time in three years. When you can put numbers on the business impact, that\u2019s when executives pay attention.",
+		title: "Everybody On the Same Page",
+		body: "Before any go-live, compliance teams, QA, production support, developers \u2014 everyone involved should agree on what\u2019s needed. On the Provider Inquiry Tool, I continuously asked questions, documented findings, and restructured what was right and wrong architecturally, testing across multiple environments before we hit our go-live date. You want your system handling 1,100+ daily users without downtime or data pipeline deficiencies. That loop tightened our accuracy, decreased data-related incidents in our provider data space, and we built monitoring and notifications so nothing stays broken for long \u2014 things get caught early, with minimal downside and little to no cost.",
 	},
 ];
 
@@ -37,7 +32,7 @@ export const PhilosophySection = () => {
 		<section ref={sectionRef}>
 			<StickySectionHeader
 				id="philosophy"
-				title="How I Build Systems"
+				title="My Systemic Workflow"
 				sectionRef={sectionRef}
 			/>
 
@@ -45,7 +40,7 @@ export const PhilosophySection = () => {
 				{principles.map((p, i) => (
 					<Card
 						key={i}
-						className={`border-teal-500/10 bg-gray-900/40 transition-all duration-300 hover:border-teal-500/25 hover:bg-gray-900/60 ${i === principles.length - 1 && principles.length % 2 !== 0 ? "md:col-span-2" : ""}`}
+						className="border-teal-500/10 bg-gray-900/40 transition-all duration-300 hover:border-teal-500/25 hover:bg-gray-900/60"
 					>
 						<CardContent className="p-5">
 							<div className="flex items-start gap-4">

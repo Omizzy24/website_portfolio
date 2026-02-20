@@ -54,7 +54,7 @@ export const WorkExperience: ExperienceEntry[] = [
 			{
 				title: "Solutions Architect",
 				type: "Full Time",
-				description: "Deployed high-availability API serving 600+ daily users (220K+ annual queries) by architecting real-time data synchronization between DynamoDB and AppSync GraphQL, reducing query latency from hours to under 1 minute\u2014reducing call center inquiries by 20% (estimated $150K+ annual savings). Led production release of AWS Glue jobs for provider data migration from on-premises to cloud, reducing data retrieval times by 30%. Achieved 15% reduction in data-related production incidents, preventing $2.5M in subsidiary budget overruns through improved data quality.",
+				description: "Deployed high-availability API serving 1,100+ daily users (220K+ annual queries) by architecting real-time data synchronization between DynamoDB and AppSync GraphQL, reducing query latency from hours to under 1 minute\u2014reducing call center inquiries by 20% (estimated $150K+ annual savings). Led production release of AWS Glue jobs for provider data migration from on-premises to cloud, reducing data retrieval times by 30%. Achieved 15% reduction in data-related production incidents, preventing $2.5M in subsidiary budget overruns through improved data quality.",
 				start: "2023-02-01",
 				end: "2024-02-01",
 				location: "Bloomfield, CT",

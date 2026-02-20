@@ -112,7 +112,7 @@ export default function Home() {
 									<div className="text-sm text-gray-400 mt-1">Infrastructure cost reduction — $24K to $90/month</div>
 								</div>
 								<div className="group rounded-lg border border-teal-500/10 bg-teal-950/20 px-5 py-4 transition-all duration-300 hover:border-teal-500/25 hover:bg-teal-950/30">
-									<div className="text-2xl font-bold text-teal-400 font-offbit">1,500+</div>
+									<div className="text-2xl font-bold text-teal-400 font-offbit">1,100+</div>
 									<div className="text-sm text-gray-400 mt-1">Daily users served, 220K+ annual queries at {"<"}1min latency</div>
 								</div>
 							</div>
